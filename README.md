@@ -16,6 +16,16 @@
 
 		git clone https://github.com/Bojidarist/dudoku
 
-4. Install dependencies from requirements.txt
+4. Change to the project directory
+
+		cd dudoku
+
+5. Install dependencies from requirements.txt
 
 		pip3 install -r requirements.txt
+
+6. Run main.py
+
+		python main.py
+		OR
+		python3 main.py
