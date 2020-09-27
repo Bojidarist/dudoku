@@ -15,3 +15,7 @@
 3. Inside the venv clone the repo
 
 		git clone https://github.com/Bojidarist/dudoku
+
+4. Install dependencies from requirements.txt
+
+		pip3 install -r requirements.txt
