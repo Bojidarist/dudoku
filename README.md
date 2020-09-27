@@ -4,7 +4,8 @@
 
 1. Make virtual enviroment
 
-		python3 -m venv dudoku_env
+		Linux/Mac: python3 -m venv dudoku_env
+		Windows: virtualenv dudoku_env
 
 2. Activate the venv
 
