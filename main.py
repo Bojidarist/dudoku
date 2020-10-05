@@ -10,8 +10,8 @@ python -m arcade.examples.starting_template
 import arcade
 import dudoku
 
-SCREEN_WIDTH = 450
-SCREEN_HEIGHT = 450
+SCREEN_WIDTH = 540
+SCREEN_HEIGHT = 540
 SCREEN_TITLE = "Starting Template"
 
 DUDOKU = dudoku.Dudoku()
@@ -31,9 +31,11 @@ class MyGame(arcade.Window):
         """ Set up the game variables. Call to re-start the game. """
         # Create your sprites and sprite lists here
 
+        DUDOKU.new_game()
+        print(DUDOKU.cells)
         print("Cell Width:", DUDOKU.cell_width)
         print("Cell Height:", DUDOKU.cell_height)
-        pass
+        
 
     def on_draw(self):
         """
@@ -43,7 +45,7 @@ class MyGame(arcade.Window):
         # This command should happen before we start drawing. It will clear
         # the screen to the background color, and erase what we drew last frame.
         arcade.start_render()
-
+        DUDOKU.draw_playground()
         # Call draw() on all your sprite lists below
 
     def on_update(self, delta_time):
