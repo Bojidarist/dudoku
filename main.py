@@ -8,20 +8,16 @@ If Python and Arcade are installed, this example can be run from the command lin
 python -m arcade.examples.starting_template
 """
 import arcade
+import dudoku
 
 SCREEN_WIDTH = 450
 SCREEN_HEIGHT = 450
 SCREEN_TITLE = "Starting Template"
 
+DUDOKU = dudoku.Dudoku()
+
 
 class MyGame(arcade.Window):
-    """
-    Main application class.
-
-    NOTE: Go ahead and delete the methods you don't need.
-    If you do need a method, delete the 'pass' and replace it
-    with your own code. Don't leave 'pass' in this program.
-    """
 
     def __init__(self, width, height, title):
         super().__init__(width, height, title)
@@ -34,6 +30,9 @@ class MyGame(arcade.Window):
     def setup(self):
         """ Set up the game variables. Call to re-start the game. """
         # Create your sprites and sprite lists here
+
+        print("Cell Width:", DUDOKU.cell_width)
+        print("Cell Height:", DUDOKU.cell_height)
         pass
 
     def on_draw(self):
