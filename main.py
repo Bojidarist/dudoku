@@ -9,8 +9,8 @@ python -m arcade.examples.starting_template
 """
 import arcade
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 450
+SCREEN_HEIGHT = 450
 SCREEN_TITLE = "Starting Template"
 
 
